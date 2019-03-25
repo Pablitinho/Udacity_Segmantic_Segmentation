@@ -1,9 +1,17 @@
 # Semantic Segmentation
 ### Introduction
-In this project, you'll label the pixels of a road in images using a Fully Convolutional Network (FCN). Figure 1 illustrate the architecture of the original FCN.
+In this project, you'll label the pixels of a road in images using a Fully Convolutional Network (FCN). Figure 1 illustrates the architecture of the original FCN.
 
 ![FCN](./images/FCN.png)
+
 Figure 1. FCN Network illustration
+
+In this approach it was used 50 epochs with a bach size of 5. It was implemented the original approach and also a modification that add convolution after the image transpose (deconvolution).
+Figure 2 shows the different results obtained with the original approach and the modificated one.
+
+![Original](./images/ss_original.png) ![Modified](./images/ss_modificated.png)
+
+Figure 1. Left shows the original output adn the right image shows the results with the modifications.
 
 
 #### Results
