@@ -9,15 +9,30 @@ Figure 1. FCN Network illustration
 In this approach it was used 50 epochs with a bach size of 5. It was implemented the original approach and also a modification that add convolution after the image transpose (deconvolution).
 Figure 2 shows the different results obtained with the original approach and the modificated one.
 
-![Original](./images/ss_original.png) ![Modified](./images/ss_modificated.png)
+![Original](./images/ss_original.png) 
+![Modified](./images/ss_modificated.png)
 
-Figure 1. Left shows the original output adn the right image shows the results with the modifications.
+Figure 2. Up shows the original output adn the Down image shows the results with the modifications.
 
 
 #### Results
+Here you can see the animated results (Left original and Right the modified one): 
 
 ![](./images/gif_original_resized.gif) ![](./images/gif_modificated_resized.gif) 
 
+#### Loss
+
+The cross entropy loss value over epochs is shown in Figure 3. The results are quite similar (Original and Modified one).
+
+![](./images/original_loss.png) 
+![](./images/modificated_loss.png) 
+
+Figure 3. Up shows the original loss adn the down one shows the loss with the modifications.
+
+### Files
+
+Training dataset: (https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/advanced_deep_learning/data_road.zip)
+VGG16 file: (https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/vgg.zip)
 ### Setup
 ##### GPU
 `main.py` will check to make sure you are using GPU - if you don't have a GPU on your system, you can use AWS or another cloud computing platform.
